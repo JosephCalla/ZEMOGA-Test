@@ -101,14 +101,15 @@
 		726DCAFB2989BD5D00C5648F /* Zemoga-Test */ = {
 			isa = PBXGroup;
 			children = (
-				726DCAFC2989BD5D00C5648F /* AppDelegate.swift */,
-				726DCAFE2989BD5D00C5648F /* SceneDelegate.swift */,
+				726DCB2F2989C13700C5648F /* Application */,
+				726DCB302989C13F00C5648F /* Presentation */,
+				726DCB312989C14700C5648F /* Domain */,
+				726DCB322989C14D00C5648F /* Data */,
+				726DCB332989C15300C5648F /* Infrastracture */,
+				726DCB342989C16E00C5648F /* Common */,
+				726DCB352989C17800C5648F /* Resources */,
 				726DCB002989BD5D00C5648F /* ViewController.swift */,
 				726DCB022989BD5D00C5648F /* Main.storyboard */,
-				726DCB082989BD5E00C5648F /* Assets.xcassets */,
-				726DCB0A2989BD5E00C5648F /* LaunchScreen.storyboard */,
-				726DCB0D2989BD5E00C5648F /* Info.plist */,
-				726DCB052989BD5D00C5648F /* Zemoga_Test.xcdatamodeld */,
 			);
 			path = "Zemoga-Test";
 			sourceTree = "<group>";
@@ -128,6 +129,61 @@
 				726DCB222989BD5E00C5648F /* Zemoga_TestUITestsLaunchTests.swift */,
 			);
 			path = "Zemoga-TestUITests";
+			sourceTree = "<group>";
+		};
+		726DCB2F2989C13700C5648F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				726DCAFC2989BD5D00C5648F /* AppDelegate.swift */,
+				726DCAFE2989BD5D00C5648F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		726DCB302989C13F00C5648F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		726DCB312989C14700C5648F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		726DCB322989C14D00C5648F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		726DCB332989C15300C5648F /* Infrastracture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastracture;
+			sourceTree = "<group>";
+		};
+		726DCB342989C16E00C5648F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		726DCB352989C17800C5648F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB052989BD5D00C5648F /* Zemoga_Test.xcdatamodeld */,
+				726DCB082989BD5E00C5648F /* Assets.xcassets */,
+				726DCB0A2989BD5E00C5648F /* LaunchScreen.storyboard */,
+				726DCB0D2989BD5E00C5648F /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
