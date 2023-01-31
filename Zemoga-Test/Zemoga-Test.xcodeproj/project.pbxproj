@@ -117,6 +117,10 @@
 		726DCB152989BD5E00C5648F /* Zemoga-TestTests */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB392989C24000C5648F /* Domain */,
+				726DCB382989C23900C5648F /* Presentation */,
+				726DCB372989C22D00C5648F /* Infrastructure */,
+				726DCB362989C22900C5648F /* Mocks */,
 				726DCB162989BD5E00C5648F /* Zemoga_TestTests.swift */,
 			);
 			path = "Zemoga-TestTests";
@@ -184,6 +188,50 @@
 				726DCB0D2989BD5E00C5648F /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		726DCB362989C22900C5648F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		726DCB372989C22D00C5648F /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB3B2989C26D00C5648F /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		726DCB382989C23900C5648F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		726DCB392989C24000C5648F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB3A2989C25800C5648F /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		726DCB3A2989C25800C5648F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		726DCB3B2989C26D00C5648F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
