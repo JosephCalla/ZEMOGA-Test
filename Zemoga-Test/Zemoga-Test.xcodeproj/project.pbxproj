@@ -17,6 +17,48 @@
 		726DCB172989BD5E00C5648F /* Zemoga_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB162989BD5E00C5648F /* Zemoga_TestTests.swift */; };
 		726DCB212989BD5E00C5648F /* Zemoga_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB202989BD5E00C5648F /* Zemoga_TestUITests.swift */; };
 		726DCB232989BD5E00C5648F /* Zemoga_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB222989BD5E00C5648F /* Zemoga_TestUITestsLaunchTests.swift */; };
+		726DCB50298A0F9000C5648F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4F298A0F9000C5648F /* User.swift */; };
+		726DCB55298A110800C5648F /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB54298A110800C5648F /* UseCase.swift */; };
+		726DCB56298A111300C5648F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB42298A0C9900C5648F /* Post.swift */; };
+		726DCB57298A111300C5648F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB46298A0EAE00C5648F /* Album.swift */; };
+		726DCB58298A111300C5648F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4D298A0F4800C5648F /* ToDo.swift */; };
+		726DCB59298A111300C5648F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4B298A0F0600C5648F /* Photo.swift */; };
+		726DCB5A298A111300C5648F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB44298A0E1600C5648F /* Comment.swift */; };
+		726DCB5B298A111700C5648F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB42298A0C9900C5648F /* Post.swift */; };
+		726DCB5C298A111700C5648F /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB46298A0EAE00C5648F /* Album.swift */; };
+		726DCB5D298A111700C5648F /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4D298A0F4800C5648F /* ToDo.swift */; };
+		726DCB5E298A111700C5648F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4F298A0F9000C5648F /* User.swift */; };
+		726DCB5F298A111700C5648F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB4B298A0F0600C5648F /* Photo.swift */; };
+		726DCB60298A111700C5648F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB44298A0E1600C5648F /* Comment.swift */; };
+		726DCB61298A111B00C5648F /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB54298A110800C5648F /* UseCase.swift */; };
+		726DCB63298A11D400C5648F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB62298A11D400C5648F /* Cancellable.swift */; };
+		726DCB64298A120300C5648F /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB62298A11D400C5648F /* Cancellable.swift */; };
+		726DCB68298A13F100C5648F /* FetchPostsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB67298A13F100C5648F /* FetchPostsUseCase.swift */; };
+		726DCB6A298A145A00C5648F /* PostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB69298A145A00C5648F /* PostsRepository.swift */; };
+		726DCB83298A1A7A00C5648F /* DefaultPostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB82298A1A7A00C5648F /* DefaultPostsRepository.swift */; };
+		726DCB84298A1A7A00C5648F /* DefaultPostsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB82298A1A7A00C5648F /* DefaultPostsRepository.swift */; };
+		726DCB86298A276400C5648F /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB85298A276400C5648F /* RepositoryTask.swift */; };
+		726DCB87298A276400C5648F /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB85298A276400C5648F /* RepositoryTask.swift */; };
+		726DCB89298A278E00C5648F /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB88298A278E00C5648F /* APIEndpoints.swift */; };
+		726DCB8A298A278E00C5648F /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB88298A278E00C5648F /* APIEndpoints.swift */; };
+		726DCB8E298A282300C5648F /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB8D298A282300C5648F /* DataTransferService.swift */; };
+		726DCB8F298A282300C5648F /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB8D298A282300C5648F /* DataTransferService.swift */; };
+		726DCB91298A290200C5648F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB90298A290200C5648F /* NetworkService.swift */; };
+		726DCB92298A290200C5648F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB90298A290200C5648F /* NetworkService.swift */; };
+		726DCB94298A2A9E00C5648F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB93298A2A9E00C5648F /* Endpoint.swift */; };
+		726DCB95298A2A9E00C5648F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB93298A2A9E00C5648F /* Endpoint.swift */; };
+		726DCB97298A2AFF00C5648F /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB96298A2AFF00C5648F /* NetworkConfig.swift */; };
+		726DCB98298A2AFF00C5648F /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB96298A2AFF00C5648F /* NetworkConfig.swift */; };
+		726DCB9A298A2BD100C5648F /* PostsResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB99298A2BD100C5648F /* PostsResponseStorage.swift */; };
+		726DCB9B298A2BD100C5648F /* PostsResponseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB99298A2BD100C5648F /* PostsResponseStorage.swift */; };
+		726DCB9D298A2C1400C5648F /* PostsRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB9C298A2C1400C5648F /* PostsRequestDTO+Mapping.swift */; };
+		726DCB9E298A2C1400C5648F /* PostsRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB9C298A2C1400C5648F /* PostsRequestDTO+Mapping.swift */; };
+		726DCBA0298A2C7500C5648F /* PostsResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB9F298A2C7500C5648F /* PostsResponseDTO+Mapping.swift */; };
+		726DCBA1298A2C7500C5648F /* PostsResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCB9F298A2C7500C5648F /* PostsResponseDTO+Mapping.swift */; };
+		726DCBA5298A2DBD00C5648F /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCBA4298A2DBD00C5648F /* CoreDataStorage.swift */; };
+		726DCBA6298A2DBD00C5648F /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726DCBA4298A2DBD00C5648F /* CoreDataStorage.swift */; };
+		726DCBA9298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726DCBA7298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld */; };
+		726DCBAA298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 726DCBA7298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +93,28 @@
 		726DCB1C2989BD5E00C5648F /* Zemoga-TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zemoga-TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		726DCB202989BD5E00C5648F /* Zemoga_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_TestUITests.swift; sourceTree = "<group>"; };
 		726DCB222989BD5E00C5648F /* Zemoga_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zemoga_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		726DCB42298A0C9900C5648F /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		726DCB44298A0E1600C5648F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		726DCB46298A0EAE00C5648F /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		726DCB4B298A0F0600C5648F /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		726DCB4D298A0F4800C5648F /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		726DCB4F298A0F9000C5648F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		726DCB54298A110800C5648F /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		726DCB62298A11D400C5648F /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		726DCB67298A13F100C5648F /* FetchPostsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPostsUseCase.swift; sourceTree = "<group>"; };
+		726DCB69298A145A00C5648F /* PostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsRepository.swift; sourceTree = "<group>"; };
+		726DCB82298A1A7A00C5648F /* DefaultPostsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPostsRepository.swift; sourceTree = "<group>"; };
+		726DCB85298A276400C5648F /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		726DCB88298A278E00C5648F /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		726DCB8D298A282300C5648F /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		726DCB90298A290200C5648F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		726DCB93298A2A9E00C5648F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		726DCB96298A2AFF00C5648F /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		726DCB99298A2BD100C5648F /* PostsResponseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsResponseStorage.swift; sourceTree = "<group>"; };
+		726DCB9C298A2C1400C5648F /* PostsRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		726DCB9F298A2C7500C5648F /* PostsResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PostsResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		726DCBA4298A2DBD00C5648F /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		726DCBA8298A2F1F00C5648F /* CoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +172,7 @@
 				726DCB332989C15300C5648F /* Infrastracture */,
 				726DCB342989C16E00C5648F /* Common */,
 				726DCB352989C17800C5648F /* Resources */,
-				726DCB002989BD5D00C5648F /* ViewController.swift */,
-				726DCB022989BD5D00C5648F /* Main.storyboard */,
+				726DCB0D2989BD5E00C5648F /* Info.plist */,
 			);
 			path = "Zemoga-Test";
 			sourceTree = "<group>";
@@ -147,6 +210,11 @@
 		726DCB302989C13F00C5648F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB002989BD5D00C5648F /* ViewController.swift */,
+				726DCB022989BD5D00C5648F /* Main.storyboard */,
+				726DCB3E2989CC1700C5648F /* View */,
+				726DCB3D2989CC0F00C5648F /* ViewModel */,
+				726DCB3C2989CBFA00C5648F /* Model */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -154,6 +222,9 @@
 		726DCB312989C14700C5648F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB41298A0BF500C5648F /* Entities */,
+				726DCB3A2989C25800C5648F /* UseCases */,
+				726DCB40298A0BD700C5648F /* Interfaces */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -161,6 +232,9 @@
 		726DCB322989C14D00C5648F /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB7E298A1A1E00C5648F /* Repository */,
+				726DCB7F298A1A3400C5648F /* Network */,
+				726DCB80298A1A3900C5648F /* PersistenceData */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -168,6 +242,7 @@
 		726DCB332989C15300C5648F /* Infrastracture */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB8C298A280700C5648F /* Network */,
 			);
 			path = Infrastracture;
 			sourceTree = "<group>";
@@ -175,6 +250,7 @@
 		726DCB342989C16E00C5648F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB62298A11D400C5648F /* Cancellable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -185,7 +261,6 @@
 				726DCB052989BD5D00C5648F /* Zemoga_Test.xcdatamodeld */,
 				726DCB082989BD5E00C5648F /* Assets.xcassets */,
 				726DCB0A2989BD5E00C5648F /* LaunchScreen.storyboard */,
-				726DCB0D2989BD5E00C5648F /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -215,7 +290,6 @@
 		726DCB392989C24000C5648F /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				726DCB3A2989C25800C5648F /* UseCases */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -223,6 +297,8 @@
 		726DCB3A2989C25800C5648F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				726DCB67298A13F100C5648F /* FetchPostsUseCase.swift */,
+				726DCB53298A10E300C5648F /* Protocol */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -232,6 +308,136 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		726DCB3C2989CBFA00C5648F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		726DCB3D2989CC0F00C5648F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		726DCB3E2989CC1700C5648F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		726DCB40298A0BD700C5648F /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB52298A10D500C5648F /* Repository */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		726DCB41298A0BF500C5648F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB42298A0C9900C5648F /* Post.swift */,
+				726DCB46298A0EAE00C5648F /* Album.swift */,
+				726DCB44298A0E1600C5648F /* Comment.swift */,
+				726DCB4B298A0F0600C5648F /* Photo.swift */,
+				726DCB4D298A0F4800C5648F /* ToDo.swift */,
+				726DCB4F298A0F9000C5648F /* User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		726DCB52298A10D500C5648F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB69298A145A00C5648F /* PostsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		726DCB53298A10E300C5648F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB54298A110800C5648F /* UseCase.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		726DCB7E298A1A1E00C5648F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB82298A1A7A00C5648F /* DefaultPostsRepository.swift */,
+				726DCB81298A1A5400C5648F /* Utils */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		726DCB7F298A1A3400C5648F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB88298A278E00C5648F /* APIEndpoints.swift */,
+				726DCB8B298A27AE00C5648F /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		726DCB80298A1A3900C5648F /* PersistenceData */ = {
+			isa = PBXGroup;
+			children = (
+				726DCBA3298A2D8E00C5648F /* PostsResponseStorage */,
+				726DCBA2298A2D8000C5648F /* CoreDataStorage */,
+			);
+			path = PersistenceData;
+			sourceTree = "<group>";
+		};
+		726DCB81298A1A5400C5648F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB85298A276400C5648F /* RepositoryTask.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		726DCB8B298A27AE00C5648F /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB9C298A2C1400C5648F /* PostsRequestDTO+Mapping.swift */,
+				726DCB9F298A2C7500C5648F /* PostsResponseDTO+Mapping.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		726DCB8C298A280700C5648F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB8D298A282300C5648F /* DataTransferService.swift */,
+				726DCB90298A290200C5648F /* NetworkService.swift */,
+				726DCB93298A2A9E00C5648F /* Endpoint.swift */,
+				726DCB96298A2AFF00C5648F /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		726DCBA2298A2D8000C5648F /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				726DCBA4298A2DBD00C5648F /* CoreDataStorage.swift */,
+				726DCBA7298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		726DCBA3298A2D8E00C5648F /* PostsResponseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				726DCB99298A2BD100C5648F /* PostsResponseStorage.swift */,
+			);
+			path = PostsResponseStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,10 +571,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726DCB8E298A282300C5648F /* DataTransferService.swift in Sources */,
 				726DCB012989BD5D00C5648F /* ViewController.swift in Sources */,
 				726DCAFD2989BD5D00C5648F /* AppDelegate.swift in Sources */,
+				726DCB86298A276400C5648F /* RepositoryTask.swift in Sources */,
+				726DCB68298A13F100C5648F /* FetchPostsUseCase.swift in Sources */,
 				726DCB072989BD5D00C5648F /* Zemoga_Test.xcdatamodeld in Sources */,
+				726DCB89298A278E00C5648F /* APIEndpoints.swift in Sources */,
+				726DCBA0298A2C7500C5648F /* PostsResponseDTO+Mapping.swift in Sources */,
+				726DCB5D298A111700C5648F /* ToDo.swift in Sources */,
+				726DCB5F298A111700C5648F /* Photo.swift in Sources */,
+				726DCB5B298A111700C5648F /* Post.swift in Sources */,
+				726DCB9D298A2C1400C5648F /* PostsRequestDTO+Mapping.swift in Sources */,
+				726DCBA9298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld in Sources */,
+				726DCB63298A11D400C5648F /* Cancellable.swift in Sources */,
+				726DCB5E298A111700C5648F /* User.swift in Sources */,
+				726DCB6A298A145A00C5648F /* PostsRepository.swift in Sources */,
+				726DCBA5298A2DBD00C5648F /* CoreDataStorage.swift in Sources */,
+				726DCB55298A110800C5648F /* UseCase.swift in Sources */,
+				726DCB97298A2AFF00C5648F /* NetworkConfig.swift in Sources */,
+				726DCB94298A2A9E00C5648F /* Endpoint.swift in Sources */,
+				726DCB5C298A111700C5648F /* Album.swift in Sources */,
+				726DCB91298A290200C5648F /* NetworkService.swift in Sources */,
+				726DCB60298A111700C5648F /* Comment.swift in Sources */,
 				726DCAFF2989BD5D00C5648F /* SceneDelegate.swift in Sources */,
+				726DCB9A298A2BD100C5648F /* PostsResponseStorage.swift in Sources */,
+				726DCB83298A1A7A00C5648F /* DefaultPostsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +604,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				726DCBA6298A2DBD00C5648F /* CoreDataStorage.swift in Sources */,
+				726DCB64298A120300C5648F /* Cancellable.swift in Sources */,
+				726DCB59298A111300C5648F /* Photo.swift in Sources */,
+				726DCB56298A111300C5648F /* Post.swift in Sources */,
+				726DCB8A298A278E00C5648F /* APIEndpoints.swift in Sources */,
+				726DCBA1298A2C7500C5648F /* PostsResponseDTO+Mapping.swift in Sources */,
+				726DCB95298A2A9E00C5648F /* Endpoint.swift in Sources */,
+				726DCB8F298A282300C5648F /* DataTransferService.swift in Sources */,
+				726DCB9E298A2C1400C5648F /* PostsRequestDTO+Mapping.swift in Sources */,
+				726DCB58298A111300C5648F /* ToDo.swift in Sources */,
+				726DCB9B298A2BD100C5648F /* PostsResponseStorage.swift in Sources */,
+				726DCB92298A290200C5648F /* NetworkService.swift in Sources */,
+				726DCB5A298A111300C5648F /* Comment.swift in Sources */,
+				726DCBAA298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld in Sources */,
+				726DCB50298A0F9000C5648F /* User.swift in Sources */,
+				726DCB61298A111B00C5648F /* UseCase.swift in Sources */,
+				726DCB87298A276400C5648F /* RepositoryTask.swift in Sources */,
 				726DCB172989BD5E00C5648F /* Zemoga_TestTests.swift in Sources */,
+				726DCB57298A111300C5648F /* Album.swift in Sources */,
+				726DCB98298A2AFF00C5648F /* NetworkConfig.swift in Sources */,
+				726DCB84298A1A7A00C5648F /* DefaultPostsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +801,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,6 +830,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,6 +969,16 @@
 			);
 			currentVersion = 726DCB062989BD5D00C5648F /* Zemoga_Test.xcdatamodel */;
 			path = Zemoga_Test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		726DCBA7298A2F1F00C5648F /* CoreDataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				726DCBA8298A2F1F00C5648F /* CoreDataStorage.xcdatamodel */,
+			);
+			currentVersion = 726DCBA8298A2F1F00C5648F /* CoreDataStorage.xcdatamodel */;
+			path = CoreDataStorage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
