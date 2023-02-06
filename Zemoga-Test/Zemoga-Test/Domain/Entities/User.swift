@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserElement: Codable {
+struct User: Identifiable {
     let id: Int
     let name, username, email: String
     let address: Address
@@ -15,18 +15,19 @@ struct UserElement: Codable {
     let company: Company
 }
 
-struct Address: Codable {
+// MARK: - Address
+struct Address {
     let street, suite, city, zipcode: String
     let geo: Geo
 }
 
-struct Geo: Codable {
+// MARK: - Geo
+struct Geo {
     let lat, lng: String
 }
 
-struct Company: Codable {
+// MARK: - Company
+struct Company {
     let name, catchPhrase, bs: String
 }
-
-//typealias User = [UserElement]
 

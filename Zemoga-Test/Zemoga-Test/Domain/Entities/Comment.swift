@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CommentElement: Codable {
+struct Comment: Equatable, Identifiable {
     let postID: Int
     let id: Int
     let name: String
@@ -19,5 +19,3 @@ struct CommentElement: Codable {
         case id, name, email, body
     }
 }
-
-//typealias Comment = [CommentElement]

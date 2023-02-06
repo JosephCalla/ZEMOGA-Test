@@ -7,16 +7,18 @@
 
 import Foundation
 
-struct Post: Codable {
+struct Post: Equatable, Identifiable {
+    typealias Identifier = Int
     let userID: Int
-    let id: Int
-    let title: Int
+    let id: Identifier
+    let title: String
     let body: String
-
-    enum CodingKeys: String, CodingKey {
-        case userID = "userId"
-        case id, title, body
-    }
+    let posterPath: String?
 }
 
-//typealias Posts = [Post]
+
+struct PostsPage: Equatable {
+    let page: Int
+    let totalPages: Int
+    let movies: [Post]
+}
