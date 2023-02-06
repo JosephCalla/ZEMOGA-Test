@@ -7,6 +7,18 @@
 
 import Foundation
 protocol PostsRepository {
-    func fetchPostsList(completion: @escaping (Result<[Post], Error>) -> Void)
-    func savePosts(completion: @escaping (Result<Post, Error>) -> Void)
+    @discardableResult
+    func fetchPostsList(query: PostQuery, page: Int,
+                        cached: @escaping (PostsPage) -> Void,
+                        completion: @escaping (Result<PostsPage, Error>) -> Void) -> Cancellable?
+    func fetchPosts(cached: @escaping ([Post]) -> Void, completion: @escaping (Result<[Post], Error>) -> Void) -> Cancellable?
+    func fetchComments(query: CommentRequestDTO, cached: @escaping ([Comment]) -> Void, completion: @escaping (Result<[Comment], Error>) -> Void) -> Cancellable?
 }
+
+
+protocol PostsQueriesRepository {
+    func fetchRecentsQueries(maxCount: Int,completion: @escaping (Result<[PostQuery], Error>) -> Void)
+    func saveRecentQuery(query: PostQuery, completion: @escaping (Result<PostQuery, Error>) -> Void)
+}
+
+

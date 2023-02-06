@@ -2,32 +2,36 @@
 //  FetchPostsUseCase.swift
 //  Zemoga-Test
 //
-//  Created by Joseph Estanislao Calla Moreyra on 31/01/23.
+//  Created by Joseph Estanislao Calla Moreyra on 5/02/23.
 //
 
 import Foundation
-final class FetchPostsUseCase: UseCase {
 
-    struct RequestValue {
-        let maxCount: Int
-    }
-    typealias ResultValue = (Result<[Post], Error>)
+protocol FetchPostsUseCase {
+    func execute(cached: @escaping ([Post]) -> Void, completion: @escaping (Result<[Post], Error>) -> Void) -> Cancellable?
+}
 
-    private let requestValue: RequestValue
-    private let completion: (ResultValue) -> Void
+final class DefaultFetchPostsUseCase: FetchPostsUseCase {
     private let postsRepository: PostsRepository
-
-    init(requestValue: RequestValue,
-         completion: @escaping (ResultValue) -> Void,
-         postsRepository: PostsRepository) {
-
-        self.requestValue = requestValue
-        self.completion = completion
+    
+    init(postsRepository: PostsRepository) {
         self.postsRepository = postsRepository
     }
     
-    func start() -> Cancellable? {
-        postsRepository.fetchPostsList(completion: completion)
-        return nil
+    func execute(cached: @escaping ([Post]) -> Void, completion: @escaping (Result<[Post], Error>) -> Void) -> Cancellable? {
+        return postsRepository.fetchPosts(cached: cached) { result in
+            
+            if case .success(let success) = result {
+                // save data to coredata
+                print("🙂")
+            }
+                
+            if case .failure(let error) = result {
+                print("🥹")
+                print(error)
+            }
+            
+            completion(result)
+        }
     }
 }
