@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ibu-kO-et5">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Posts List View Controller-->
+        <scene sceneID="6Uu-Ll-9Nb">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="ibu-kO-et5" customClass="PostsListViewController" customModule="Zemoga_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mAZ-vV-2PD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92N-Jz-e5U" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXn-C1-dVJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="0UE-Yp-E51"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Xz-tn-OCV">
+                                        <rect key="frame" x="0.0" y="56" width="393" height="703"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostsListItemCell" rowHeight="77" id="b4G-UU-LoM" customClass="PostsListItemCell" customModule="Zemoga_Test" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="77"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b4G-UU-LoM" id="wuy-eI-p7L">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="77"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text=" Title of Posts :)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vze-Po-qBx">
+                                                            <rect key="frame" x="10" y="10" width="373" height="57"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="vze-Po-qBx" secondAttribute="bottom" constant="10" id="QwX-w0-oNV"/>
+                                                        <constraint firstItem="vze-Po-qBx" firstAttribute="leading" secondItem="wuy-eI-p7L" secondAttribute="leading" constant="10" id="WM5-Xn-WEq"/>
+                                                        <constraint firstItem="vze-Po-qBx" firstAttribute="top" secondItem="wuy-eI-p7L" secondAttribute="top" constant="10" id="ZZR-Tn-caH"/>
+                                                        <constraint firstAttribute="trailing" secondItem="vze-Po-qBx" secondAttribute="trailing" constant="10" id="cMX-B1-EQy"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <connections>
+                                                    <outlet property="titleLabel" destination="vze-Po-qBx" id="1vA-it-Kmg"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ibu-kO-et5" id="wBZ-ae-RYP"/>
+                                            <outlet property="delegate" destination="ibu-kO-et5" id="XvQ-hr-vku"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3Xz-tn-OCV" secondAttribute="trailing" id="22S-Vt-x4O"/>
+                                    <constraint firstItem="wXn-C1-dVJ" firstAttribute="top" secondItem="92N-Jz-e5U" secondAttribute="top" id="8sp-dY-mN8"/>
+                                    <constraint firstAttribute="trailing" secondItem="wXn-C1-dVJ" secondAttribute="trailing" id="U96-DZ-4yd"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Xz-tn-OCV" secondAttribute="bottom" id="lng-sf-Wui"/>
+                                    <constraint firstItem="3Xz-tn-OCV" firstAttribute="top" secondItem="wXn-C1-dVJ" secondAttribute="bottom" id="v42-u5-lfD"/>
+                                    <constraint firstItem="3Xz-tn-OCV" firstAttribute="leading" secondItem="92N-Jz-e5U" secondAttribute="leading" id="vKM-N5-hDg"/>
+                                    <constraint firstItem="wXn-C1-dVJ" firstAttribute="leading" secondItem="92N-Jz-e5U" secondAttribute="leading" id="yCN-UD-7lZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YEF-zu-lEt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YEF-zu-lEt" firstAttribute="trailing" secondItem="92N-Jz-e5U" secondAttribute="trailing" id="9fd-I2-9eI"/>
+                            <constraint firstItem="92N-Jz-e5U" firstAttribute="leading" secondItem="YEF-zu-lEt" secondAttribute="leading" id="Jbg-Vu-kJy"/>
+                            <constraint firstItem="YEF-zu-lEt" firstAttribute="bottom" secondItem="92N-Jz-e5U" secondAttribute="bottom" id="TpD-TB-dXH"/>
+                            <constraint firstItem="92N-Jz-e5U" firstAttribute="top" secondItem="YEF-zu-lEt" secondAttribute="top" id="Wab-XS-JMU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="92N-Jz-e5U" id="x4b-AC-BLl"/>
+                        <outlet property="searchBarContainer" destination="wXn-C1-dVJ" id="b5C-9z-Vhe"/>
+                        <outlet property="tableView" destination="3Xz-tn-OCV" id="S9O-sw-H8c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLh-AW-y6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622.13740458015263" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
